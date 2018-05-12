@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: zuul-api-gateway
+
+server:
+  port: 9999
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+      
+security:
+  basic:
+    enabled: false
+    
+management:
+  security:
+    enabled: false  
+      
+      
+zuul:
+  routes:
+    fileDownloadService:
+      service-id: FILE-DOWNLOAD-SERVICE 
+    fileUploadService:
+      service-id: FILE-UPLOAD-SERVICE 
