@@ -27,3 +27,8 @@ note here that in the url fileUploadService and fileDownloadService are the rout
 6) You need to use mysql database and create a schema name test. table with name 'file'  will automatically gets created.
 
 7) Both the upload and download microservice is reading the configuration from git and the configuraiton application.yml file is here: https://github.com/jaydattdesai/Spring-cloud-config/blob/master/application.yml
+
+
+8) discovery-server-client.png - This image represents the discovery server and client applications running on pcf
+
+9) client-registration-pcf-discovery-server.png - This image represents the discovery server on pcf . In that discovery server you can see client registration
