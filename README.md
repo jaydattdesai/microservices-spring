@@ -32,3 +32,5 @@ note here that in the url fileUploadService and fileDownloadService are the rout
 8) discovery-server-client.png - This image represents the discovery server and client applications running on pcf
 
 9) client-registration-pcf-discovery-server.png - This image represents the discovery server on pcf . In that discovery server you can see client registration
+
+10) pcf free account has capacity of 2 GB only. so we can at max run 2 microservices only . Else entire above scenario can be replicated on pcf.
