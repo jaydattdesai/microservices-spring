@@ -16,7 +16,7 @@ public class File {
 	@Column
 	private String fileName;
 	
-	@Column(length=10000)
+	@Column(length=Integer.MAX_VALUE)
 	private byte[] content;
 	
 	@Column
