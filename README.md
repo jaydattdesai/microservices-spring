@@ -9,7 +9,9 @@ register itself on eureka server. The endpoint for file upload is as below
 
 4) file-download: This module is our eureka discovery client for download file. This service will dynamically select port and register itself on eureka server. 
 
-5) api-gateway: This module is our api gateway based on zuul.  There are 2 routes in this api-gateway . 1st is pointing to download named microservice through eureka server and 2nd is  pointing to upload named microservice through eureka server. 
+5) order-crud: This module is our eureka discovery client for order crud. This service will dynamically select port and register itself on eureka server.
+
+6) api-gateway: This module is our api gateway based on zuul.  There are 2 routes in this api-gateway . 1st is pointing to download named microservice through eureka server and 2nd is  pointing to upload named microservice through eureka server. 
 
 The endpoint of zuul api gateway are as below
 
@@ -21,6 +23,20 @@ GET: http://localhost:9999/fileDownloadService/listAllFiles
 
 List a specific file from id:
 http://localhost:9999/fileDownloadService/listAllFiles/4
+
+Create new ordder:
+POST: http://localhost:9999/orderService/
+{
+  
+  "itemName":"tv",
+  "orderQty":"10"
+}
+
+Get all order:
+http://localhost:9999/orderService/
+
+Get order based on id:
+http://localhost:9999/orderService/{id}
 
 note here that in the url fileUploadService and fileDownloadService are the routes to named microservices.
 
