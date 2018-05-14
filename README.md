@@ -40,13 +40,13 @@ http://localhost:9999/orderService/{id}
 
 note here that in the url fileUploadService and fileDownloadService are the routes to named microservices.
 
-6) You need to use mysql database and create a schema name test. table with name 'file'  will automatically gets created.
+7) You need to use mysql database and create a schema name test. table with name 'file'  will automatically gets created.
 
-7) Both the upload and download microservice is reading the configuration from git and the configuraiton application.yml file is here: https://github.com/jaydattdesai/Spring-cloud-config/blob/master/application.yml
+8) Both the upload and download microservice is reading the configuration from git and the configuraiton application.yml file is here: https://github.com/jaydattdesai/Spring-cloud-config/blob/master/application.yml
 
 
-8) discovery-server-client.png - This image represents the discovery server and client applications running on pcf
+9) discovery-server-client.png - This image represents the discovery server and client applications running on pcf
 
-9) client-registration-pcf-discovery-server.png - This image represents the discovery server on pcf . In that discovery server you can see client registration
+10) client-registration-pcf-discovery-server.png - This image represents the discovery server on pcf . In that discovery server you can see client registration
 
-10) pcf free account has capacity of 2 GB only. so we can at max run 2 microservices only . Else entire above scenario can be replicated on pcf.
+11) pcf free account has capacity of 2 GB only. so we can at max run 2 microservices only . Else entire above scenario can be replicated on pcf.
