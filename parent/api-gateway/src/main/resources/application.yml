@@ -25,4 +25,6 @@ zuul:
     fileDownloadService:
       service-id: FILE-DOWNLOAD-SERVICE 
     fileUploadService:
-      service-id: FILE-UPLOAD-SERVICE 
+      service-id: FILE-UPLOAD-SERVICE
+    orderService:
+      service-id: ORDER-CRUD 
